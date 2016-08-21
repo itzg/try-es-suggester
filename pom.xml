@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>me.itzg.try</groupId>
-	<artifactId>es-suggester</artifactId>
+	<artifactId>try-es-suggester</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 

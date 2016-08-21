@@ -2,10 +2,10 @@ machine:
   java:
     version: openjdk8
 
-deploy:
+deployment:
   master:
     branch: master
     commands:
       - docker login -u $DOCKER_REPO_USER -p $DOCKER_REPO_PASSWORD $DOCKER_REPO_SERVER
-      - docker tag $OUR_MODULE $DOCKER_REPO_PATH/$CIRCLE_PROJECT_REPONAME:$tag
-      - docker push $DOCKER_REPO_PATH/$CIRCLE_PROJECT_REPONAME:$tag
+      - docker tag $CIRCLE_PROJECT_REPONAME $DOCKER_REPO_SERVER/$CIRCLE_USERNAME/$CIRCLE_PROJECT_REPONAME
+      - docker push $DOCKER_REPO_SERVER/$CIRCLE_USERNAME/$CIRCLE_PROJECT_REPONAME
