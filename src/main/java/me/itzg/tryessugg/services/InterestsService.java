@@ -42,7 +42,6 @@ public class InterestsService {
                 .get();
 
         final List<String> suggestions = new ArrayList<>();
-        suggestions.add(given);
 
         final Terms interests = searchResponse.getAggregations().get("interests");
         interests.getBuckets().forEach(b -> {

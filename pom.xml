@@ -55,7 +55,7 @@
 		<dependency>
 			<groupId>org.webjars.bower</groupId>
 			<artifactId>angular-material</artifactId>
-			<version>1.1.0-rc.5</version>
+			<version>1.1.0</version>
 		</dependency>
 	</dependencies>
 

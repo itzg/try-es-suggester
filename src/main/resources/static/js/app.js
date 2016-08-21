@@ -1,8 +1,16 @@
 angular.module('SuggesterApp', [
     'ngMaterial'
 ])
-    .controller('MainCtrl', function ($scope, $http, $mdToast) {
+    .controller('MainCtrl', function ($scope, $http, $mdToast, $mdConstant) {
         $scope.interests = [];
+
+        $scope.keys = [
+            $mdConstant.KEY_CODE.SPACE,
+            $mdConstant.KEY_CODE.TAB,
+            $mdConstant.KEY_CODE.COMMA,
+            $mdConstant.KEY_CODE.ENTER,
+            $mdConstant.KEY_CODE.RIGHT_ARROW
+        ];
 
         $scope.saveInterests = function() {
             var saveThese = $scope.interests;
